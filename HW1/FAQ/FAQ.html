@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+        body.dark-mode {
+            background-color: #1a202c;
+            color: white;
+        }
+        .faq-question {
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .faq-answer {
+            display: none;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Data Dashboard</h1>
+            <ul class="flex space-x-4">
+                <li><a href="../index.html" class="hover:underline">Home</a></li>
+                <li><a href="../DataExplorer/DataExplorer.html" class="hover:underline">Explore</a></li>
+                <li><a href="../AboutAndContact/AboutAndContact.html" class="hover:underline">About & Contact</a></li>
+                <li><a href="FAQ.html" class="hover:underline">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dark/Light Mode Toggle Button -->
+    <div class="bg-gray text-white py-2">
+        <div class="container mx-auto flex justify-end">
+            <button id="theme-toggle" class="theme-toggle-btn p-2 rounded-full">
+                <img id="theme-icon" src="../moon.png" alt="Toggle Theme" width="24" height="24">
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+        
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">What is a data dashboard?</h3>
+                <p class="faq-answer">A data dashboard is a tool that consolidates and visualizes key performance indicators, metrics, and data points to provide a comprehensive view of an organization’s performance.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">How can I use the data dashboard?</h3>
+                <p class="faq-answer">You can use the data dashboard to track and analyze key metrics, identify trends, and make data-driven decisions to improve performance.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">What types of data can be visualized?</h3>
+                <p class="faq-answer">The data dashboard can visualize various types of data, including sales data, customer data, financial data, and more.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">Is the data dashboard customizable?</h3>
+                <p class="faq-answer">Yes, the data dashboard is customizable. You can adjust the charts, graphs, and other visualizations to fit your specific needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">How often is the data updated?</h3>
+                <p class="faq-answer">The frequency of data updates depends on your data sources. It can range from real-time updates to daily or weekly updates.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">Can I share the data dashboard with my team?</h3>
+                <p class="faq-answer">Yes, you can share the data dashboard with your team. You can set up user access and permissions to control who can view and edit the dashboard.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question text-xl font-bold">What are the system requirements for using the data dashboard?</h3>
+                <p class="faq-answer">The data dashboard is web-based and can be accessed from any modern web browser. There are no specific system requirements.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-white mt-8">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Data Dashboard. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+
+            if (document.body.classList.contains('dark-mode')) {
+                themeIcon.src = '../sun.png';
+            } else {
+                themeIcon.src = '../moon.png';
+            }
+        });
+
+        // FAQ toggle functionality
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
