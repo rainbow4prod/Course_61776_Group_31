@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Course_61776_Group_31/static/css/main.5d4335b4.css",
+    "main.js": "/Course_61776_Group_31/static/js/main.7e3f0012.js",
+    "index.html": "/Course_61776_Group_31/index.html",
+    "main.5d4335b4.css.map": "/Course_61776_Group_31/static/css/main.5d4335b4.css.map",
+    "main.7e3f0012.js.map": "/Course_61776_Group_31/static/js/main.7e3f0012.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4335b4.css",
+    "static/js/main.7e3f0012.js"
+  ]
+}
