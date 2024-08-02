@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment="Added previews">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +264,7 @@
       <workItem from="1722187654147" duration="2930000" />
       <workItem from="1722587831246" duration="291000" />
       <workItem from="1722588132219" duration="696000" />
-      <workItem from="1722592649453" duration="16846000" />
+      <workItem from="1722592649453" duration="17053000" />
     </task>
     <task id="LOCAL-00001" summary="React initial structure">
       <created>1721585053379</created>
@@ -505,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722618681880</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added previews">
+      <created>1722618840065</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722618840065</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
