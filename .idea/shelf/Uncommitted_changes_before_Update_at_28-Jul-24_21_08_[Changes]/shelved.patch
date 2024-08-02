@@ -1,0 +1,19 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"untitled1\",\r\n  \"version\": \"0.1.0\",\r\n  \"homepage\": \"https://rainbow4prod.github.io/Course_61776_Group_31/\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.17.0\",\r\n    \"@testing-library/react\": \"^13.4.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"chart.js\": \"^4.4.3\",\r\n    \"react\": \"^18.3.1\",\r\n    \"react-dom\": \"^18.3.1\",\r\n    \"react-router-dom\": \"^6.25.1\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"predeploy\": \"npm run build\",\r\n    \"deploy\": \"gh-pages -d build\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"autoprefixer\": \"^10.4.19\",\r\n    \"gh-pages\": \"^6.1.1\",\r\n    \"tailwindcss\": \"^3.4.2\"\r\n  }\r\n}\r\n
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	
++++ b/package.json	
+@@ -39,10 +39,5 @@
+       "last 1 firefox version",
+       "last 1 safari version"
+     ]
+-  },
+-  "devDependencies": {
+-    "autoprefixer": "^10.4.19",
+-    "gh-pages": "^6.1.1",
+-    "tailwindcss": "^3.4.2"
+   }
+ }
