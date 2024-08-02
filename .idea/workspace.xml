@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b241a92-aa5d-4c57-87e3-1acd30a4a718" name="Changes" comment="Changed GH deploy scripts again">
-      <change beforePath="$PROJECT_DIR$/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/moon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/sun.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.5d4335b4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.5d4335b4.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.7e3f0012.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.7e3f0012.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.7e3f0012.js.map" beforeDir="false" />
+    <list default="true" id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW1/AboutAndContact/AboutAndContact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/DataDashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/DataExplorer/DataExplorer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/FAQ/FAQ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/HW1G31.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/sun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/HW2G31.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/site_Arch.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/site_arch_preview.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/use_case.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/use_case_preview.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pictures/moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pictures/sun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AboutAndContact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FAQ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21-Jul-24_21_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21-Jul-24_21_15__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_21_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_21_08__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
