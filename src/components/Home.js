@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from './NavBar';
-import ThemeToggle from './ThemeToggle';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
