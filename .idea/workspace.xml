@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment="Changed GH deploy scripts again">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/web.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21-Jul-24_21_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21-Jul-24_21_15__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_21_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_21_08__Changes_.xml" afterDir="false" />
+    <list default="true" id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/sun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.f855e6bc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.f855e6bc.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/453.b244add5.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/453.b244add5.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.df8a56e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.df8a56e1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v14.15.0-win-x64/node" />
@@ -61,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\braudana\src" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\src" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\src\components" />
@@ -254,7 +262,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8b241a92-aa5d-4c57-87e3-1acd30a4a718" name="Changes" comment="" />
+      <changelist id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment="Changed GH deploy scripts again" />
       <created>1721577337056</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -268,6 +276,7 @@
       <workItem from="1722187654147" duration="2930000" />
       <workItem from="1722587831246" duration="291000" />
       <workItem from="1722588132219" duration="696000" />
+      <workItem from="1722592649453" duration="1576000" />
     </task>
     <task id="LOCAL-00001" summary="React initial structure">
       <created>1721585053379</created>
@@ -311,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722590478772</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <created>1722593019214</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722593019214</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +361,7 @@
     <MESSAGE value="Use case + archi overview&#10;Added GH deploy scripts" />
     <MESSAGE value="Changed GH deploy scripts" />
     <MESSAGE value="Changed GH deploy scripts again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed GH deploy scripts again" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
