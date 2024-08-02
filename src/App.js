@@ -8,9 +8,9 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/braudana">
+    <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/about-contact" element={<AboutAndContact />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
