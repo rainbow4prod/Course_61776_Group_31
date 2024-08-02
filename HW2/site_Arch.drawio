@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.4">
+  <diagram name="Page-1" id="UJ-xPzX6-R15hK4AEenr">
+    <mxGraphModel dx="1434" dy="778" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="73YTJMfirVBhKPGLGLqU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="73YTJMfirVBhKPGLGLqU-4" target="73YTJMfirVBhKPGLGLqU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-4" value="User" style="shape=actor;whiteSpace=wrap;html=1;verticalAlign=bottom;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-5" value="Tailwind" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-logos/24/bxl-tailwind-css-128.png;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="306" y="740" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="73YTJMfirVBhKPGLGLqU-6" target="73YTJMfirVBhKPGLGLqU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="73YTJMfirVBhKPGLGLqU-6" target="73YTJMfirVBhKPGLGLqU-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-6" value="Front End" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="200" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-11" value="FAQ" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.faq;" vertex="1" parent="73YTJMfirVBhKPGLGLqU-6">
+          <mxGeometry x="40" y="495" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-12" value="About us &amp;amp; Contact" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.about_us;" vertex="1" parent="73YTJMfirVBhKPGLGLqU-6">
+          <mxGeometry x="40" y="415" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-13" value="Data Visualization" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.chart;" vertex="1" parent="73YTJMfirVBhKPGLGLqU-6">
+          <mxGeometry x="40" y="330" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-7" value="Back End" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="649" y="80" width="200" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-8" value="&lt;b&gt;Sqlite&lt;/b&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="73YTJMfirVBhKPGLGLqU-7">
+          <mxGeometry x="55" y="80" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="73YTJMfirVBhKPGLGLqU-10" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.json" vertex="1" parent="73YTJMfirVBhKPGLGLqU-7">
+          <mxGeometry x="55" y="262.09999999999997" width="70" height="75.8" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
