@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf64482b.css",
-    "main.js": "/static/js/main.4ed1b4bb.js",
-    "index.html": "/index.html",
-    "main.bf64482b.css.map": "/static/css/main.bf64482b.css.map",
-    "main.4ed1b4bb.js.map": "/static/js/main.4ed1b4bb.js.map"
+    "main.css": "/Course_61776_Group_31/static/css/main.bf64482b.css",
+    "main.js": "/Course_61776_Group_31/static/js/main.4ed1b4bb.js",
+    "index.html": "/Course_61776_Group_31/index.html",
+    "main.bf64482b.css.map": "/Course_61776_Group_31/static/css/main.bf64482b.css.map",
+    "main.4ed1b4bb.js.map": "/Course_61776_Group_31/static/js/main.4ed1b4bb.js.map"
   },
   "entrypoints": [
     "static/css/main.bf64482b.css",
