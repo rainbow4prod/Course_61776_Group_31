@@ -151,7 +151,7 @@ const Home = () => {
                 <img src='pictures/GraphChart.png' alt="Line Chart Preview" width="200" height="200" className="object-contain border-2 border-gray-300 rounded-lg" />
               </button>
               <button onClick={() => setChartType('pie')} className="focus:outline-none">
-                <img src='pictures/PieChart.png' alt="Pie Chart Preview" width="200" height="200" className="object-contain border-2 border-dotted border-gray-300 rounded-lg" />
+                <img src='pictures/PieChart.png' alt="Pie Chart Preview" width="200" height="200" className="object-contain border-2 border-gray-300 rounded-lg" />
               </button>
             </div>
           </div>

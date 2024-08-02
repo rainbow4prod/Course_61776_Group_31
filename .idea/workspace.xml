@@ -52,6 +52,7 @@
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v14.15.0-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PyCharm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -264,7 +265,7 @@
       <workItem from="1722187654147" duration="2930000" />
       <workItem from="1722587831246" duration="291000" />
       <workItem from="1722588132219" duration="696000" />
-      <workItem from="1722592649453" duration="17191000" />
+      <workItem from="1722592649453" duration="17454000" />
     </task>
     <task id="LOCAL-00001" summary="React initial structure">
       <created>1721585053379</created>
@@ -518,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722619049162</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added previews">
+      <created>1722619186212</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1722619186212</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
