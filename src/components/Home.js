@@ -1,25 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from './NavBar';
 import { Chart, registerables } from 'chart.js';
+import { FaUpload } from 'react-icons/fa'; // Import Font Awesome upload icon
 
 Chart.register(...registerables);
 
 const Home = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
   const [chartType, setChartType] = useState('');
   const [data, setData] = useState(null);
   const [fields, setFields] = useState({ xField: '', yField: '' });
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     const updateTheme = () => {
       const newTheme = localStorage.getItem('theme') || 'light';
       setTheme(newTheme);
     };
-
 
     window.addEventListener('themechange', updateTheme);
 
@@ -116,8 +115,6 @@ const Home = () => {
           } : {}
         }
       });
-
-      console.log('Chart options:', chartInstance.current.options);
     }
   }, [data, fields, chartType, theme]);
 
@@ -127,20 +124,34 @@ const Home = () => {
       <main className="flex-grow container mx-auto py-8">
         {!data ? (
           <div className="flex flex-col items-center justify-center h-full">
-            <input type="file" accept=".json" onChange={handleFileUpload} className="mb-4" />
+            <input
+              type="file"
+              accept=".json"
+              onChange={handleFileUpload}
+              ref={fileInputRef}
+              style={{ display: 'none' }}
+            />
+            <button
+              onClick={() => fileInputRef.current.click()}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg text-xl flex items-center justify-center space-x-2"
+              style={{ transform: 'scale(1.5)' }}
+            >
+              <FaUpload className="text-3xl mr-4" />
+              <span>Upload JSON File</span>
+            </button>
           </div>
         ) : !chartType ? (
           <div className="text-center">
             <label className="block text-lg font-medium mb-4">Select Visualization Type:</label>
             <div className="flex justify-around">
               <button onClick={() => setChartType('bar')} className="focus:outline-none">
-                <img src="https://via.placeholder.com/150?text=Bar+Chart" alt="Bar Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='/pictures/BarChart.png' alt="Bar Chart Preview" className="w-32 h-32 object-contain" />
               </button>
               <button onClick={() => setChartType('line')} className="focus:outline-none">
-                <img src="https://via.placeholder.com/150?text=Line+Chart" alt="Line Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='/pictures/GraphChart.png' alt="Line Chart Preview" className="w-32 h-32 object-contain" />
               </button>
               <button onClick={() => setChartType('pie')} className="focus:outline-none">
-                <img src="https://via.placeholder.com/150?text=Pie+Chart" alt="Pie Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='/pictures/PieChart.png' alt="Pie Chart Preview" className="w-32 h-32 object-contain" />
               </button>
             </div>
           </div>

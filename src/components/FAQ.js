@@ -16,7 +16,7 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "What is Braudana?",
-      answer: "Braudana is most successful competitor of visualization tools such as Grafana,Kibana,Ganglia,etc.It can consolidate and visualize metrics, and data points to provide a comprehensive view of date provided."
+      answer: "Braudana is most successful competitor of visualization tools such as Grafana,Kibana,Ganglia,etc. It can consolidate and visualize metrics, and data points to provide a comprehensive view of date provided."
     },
     {
       question: "How can I use Braudana?",
