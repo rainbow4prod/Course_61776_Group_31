@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from './NavBar';
+import ThemeToggle from './ThemeToggle';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
@@ -8,6 +9,7 @@ const Home = () => {
   const [chartType, setChartType] = useState('');
   const [data, setData] = useState(null);
   const [fields, setFields] = useState({ xField: '', yField: '' });
+  const [darkMode, setDarkMode] = useState(document.documentElement.classList.contains('dark'));
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -17,6 +19,8 @@ const Home = () => {
     reader.onload = () => {
       const jsonData = JSON.parse(reader.result);
       setData(jsonData);
+      const keys = Object.keys(jsonData[0]);
+      setFields({ xField: keys[0], yField: keys[1] });
     };
     reader.readAsText(file);
   };
@@ -37,10 +41,14 @@ const Home = () => {
 
   const handleBack = () => {
     setChartType('');
-    setFields({ xField: '', yField: '' });
+    setFields({ xField: Object.keys(data[0])[0], yField: Object.keys(data[0])[1] });
     if (chartInstance.current) {
       chartInstance.current.destroy();
     }
+  };
+
+  const getRandomColors = (count) => {
+    return Array.from({ length: count }, () => `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.5)`);
   };
 
   useEffect(() => {
@@ -49,14 +57,16 @@ const Home = () => {
       if (chartInstance.current) {
         chartInstance.current.destroy();
       }
+
+      const colors = getRandomColors(data.length);
       chartInstance.current = new Chart(chartCanvas, {
         type: chartType,
         data: {
           labels: data.map(item => item[fields.xField]),
           datasets: [{
-            label: 'Data',
-            backgroundColor: chartType === 'pie' ? ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)'] : 'rgba(255, 99, 132, 0.2)',
-            borderColor: chartType === 'pie' ? ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'] : 'rgba(255, 99, 132, 1)',
+            label: fields.yField,
+            backgroundColor: chartType === 'bar' || chartType === 'pie' ? colors : 'rgba(255, 99, 132, 0.2)',
+            borderColor: chartType === 'bar' || chartType === 'pie' ? colors.map(color => color.replace('0.5', '1')) : 'rgba(255, 99, 132, 1)',
             borderWidth: 1,
             data: data.map(item => item[fields.yField])
           }]
@@ -68,17 +78,46 @@ const Home = () => {
             legend: {
               display: chartType === 'pie',
               position: 'bottom',
+            },
+            tooltip: {
+              callbacks: {
+                label: (context) => `${fields.yField}: ${context.raw}`
+              }
             }
           },
           scales: chartType !== 'pie' ? {
+            x: {
+              ticks: {
+                color: darkMode ? 'white' : 'black'
+              },
+              grid: {
+                color: darkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+              }
+            },
             y: {
-              beginAtZero: true
+              beginAtZero: true,
+              ticks: {
+                color: darkMode ? 'white' : 'black'
+              },
+              grid: {
+                color: darkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+              }
             }
           } : {}
         }
       });
     }
-  }, [data, fields, chartType]);
+  }, [data, fields, chartType, darkMode]);
+
+  useEffect(() => {
+    const handleThemeChange = () => {
+      setDarkMode(document.documentElement.classList.contains('dark'));
+    };
+    window.addEventListener('themechange', handleThemeChange);
+    return () => {
+      window.removeEventListener('themechange', handleThemeChange);
+    };
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
