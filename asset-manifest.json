@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/braudana//static/css/main.ffa9ba3c.css",
-    "main.js": "/braudana//static/js/main.c4bb6b38.js",
+    "main.js": "/braudana//static/js/main.225ac73c.js",
     "index.html": "/braudana//index.html",
     "main.ffa9ba3c.css.map": "/braudana//static/css/main.ffa9ba3c.css.map",
-    "main.c4bb6b38.js.map": "/braudana//static/js/main.c4bb6b38.js.map"
+    "main.225ac73c.js.map": "/braudana//static/js/main.225ac73c.js.map"
   },
   "entrypoints": [
     "static/css/main.ffa9ba3c.css",
-    "static/js/main.c4bb6b38.js"
+    "static/js/main.225ac73c.js"
   ]
 }
