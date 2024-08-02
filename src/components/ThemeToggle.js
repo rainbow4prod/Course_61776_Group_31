@@ -28,7 +28,7 @@ const ThemeToggle = () => {
           className="theme-toggle-btn p-2 rounded-full"
         >
           <img
-            src={darkMode ? '/pictures/sun.png' : '/pictures/moon.png'}
+            src={darkMode ? 'pictures/sun.png' : 'pictures/moon.png'}
             alt="Toggle Theme"
             width="24"
             height="24"
