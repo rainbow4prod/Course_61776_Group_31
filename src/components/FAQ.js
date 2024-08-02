@@ -15,32 +15,28 @@ const FAQ = () => {
 
   const faqItems = [
     {
-      question: "What is a data dashboard?",
-      answer: "A data dashboard is a tool that consolidates and visualizes key performance indicators, metrics, and data points to provide a comprehensive view of an organization’s performance."
+      question: "What is Braudana?",
+      answer: "Braudana is most successful competitor of visualization tools such as Grafana,Kibana,Ganglia,etc.It can consolidate and visualize metrics, and data points to provide a comprehensive view of date provided."
     },
     {
-      question: "How can I use the data dashboard?",
-      answer: "You can use the data dashboard to track and analyze key metrics, identify trends, and make data-driven decisions to improve performance."
+      question: "How can I use Braudana?",
+      answer: "You can use the data dashboard to analyze key metrics, identify trends, and make data-driven decisions to improve performance."
     },
     {
       question: "What types of data can be visualized?",
-      answer: "The data dashboard can visualize various types of data, including sales data, customer data, financial data, and more."
+      answer: "The tool can visualize various types of data, including sales data, customer data, financial data, and more."
     },
     {
-      question: "Is the data dashboard customizable?",
-      answer: "Yes, the data dashboard is customizable. You can adjust the charts, graphs, and other visualizations to fit your specific needs."
+      question: "Is the output customizable?",
+      answer: "Yes, you can adjust the charts, graphs, and other visualizations to fit your specific needs."
     },
     {
       question: "How often is the data updated?",
-      answer: "The frequency of data updates depends on your data sources. It can range from real-time updates to daily or weekly updates."
+      answer: "As often as you want. Just upload new file :)"
     },
     {
-      question: "Can I share the data dashboard with my team?",
-      answer: "Yes, you can share the data dashboard with your team. You can set up user access and permissions to control who can view and edit the dashboard."
-    },
-    {
-      question: "What are the system requirements for using the data dashboard?",
-      answer: "The data dashboard is web-based and can be accessed from any modern web browser. There are no specific system requirements."
+      question: "What are the system requirements for using Braudana?",
+      answer: "Braudana is web-based and can be accessed from any modern web browser. There are no specific system requirements."
     }
   ];
 

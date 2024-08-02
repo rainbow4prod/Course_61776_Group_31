@@ -8,7 +8,7 @@ const AboutAndContact = () => (
     <NavBar />
     <main className="flex-grow container mx-auto py-8">
       <h2 className="text-2xl font-bold mb-4">About Us</h2>
-      <p>Welcome to Braudana. It's like Grafana, but better. Our mission is to provide insightful data visualizations to help you make informed decisions.</p>
+      <p>Welcome to Braudana project. Our mission is to provide insightful data visualizations to help you make informed decisions.</p>
       <h3 className="text-xl font-bold mt-8 mb-2">Team Details</h3>
       <table className="min-w-full divide-y divide-gray-200 transparent-table">
         <thead className="dark-table-header">
@@ -30,8 +30,8 @@ const AboutAndContact = () => (
             <td className="px-6 py-4 whitespace-nowrap dark-table-cell">31</td>
           </tr>
           <tr>
-            <td className="px-6 py-4 whitespace-nowrap dark-table-cell">Nick Lerman</td>
-            <td className="px-6 py-4 whitespace-nowrap dark-table-cell">Nick.Lerman@e.braude.ac.il</td>
+            <td className="px-6 py-4 whitespace-nowrap dark-table-cell">Nik Lerman</td>
+            <td className="px-6 py-4 whitespace-nowrap dark-table-cell">Nik.Lerman@e.braude.ac.il</td>
             <td className="px-6 py-4 whitespace-nowrap dark-table-cell">31</td>
           </tr>
           <tr>

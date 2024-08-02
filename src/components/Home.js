@@ -17,11 +17,9 @@ const Home = () => {
   useEffect(() => {
     const updateTheme = () => {
       const newTheme = localStorage.getItem('theme') || 'light';
-      console.log(`Theme updated via custom event. New theme: ${newTheme}`);
       setTheme(newTheme);
     };
 
-    console.log(`Initial theme: ${theme}`);
 
     window.addEventListener('themechange', updateTheme);
 
@@ -36,7 +34,6 @@ const Home = () => {
       setData(jsonData);
       const keys = Object.keys(jsonData[0]);
       setFields({ xField: keys[0], yField: keys[1] });
-      console.log('File uploaded and parsed:', jsonData);
     };
     reader.readAsText(file);
   };
@@ -46,7 +43,6 @@ const Home = () => {
       ...prevFields,
       [axis]: value,
     }));
-    console.log(`Field selected. ${axis}: ${value}`);
   };
 
   const handleBack = () => {
@@ -55,7 +51,6 @@ const Home = () => {
     if (chartInstance.current) {
       chartInstance.current.destroy();
     }
-    console.log('Back button clicked. Chart type and fields reset.');
   };
 
   const getRandomColors = (count) => {
@@ -70,7 +65,6 @@ const Home = () => {
       }
 
       const colors = getRandomColors(data.length);
-      console.log(`Rendering chart with theme: ${theme}`);
 
       chartInstance.current = new Chart(chartCanvas, {
         type: chartType,
