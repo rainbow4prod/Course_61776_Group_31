@@ -69,7 +69,7 @@ const FAQ = () => {
       </main>
       <footer className="bg-gray-800 p-4 text-white mt-8">
         <div className="container mx-auto text-center">
-          &copy; 2024 Data Dashboard. All rights reserved.
+          &copy; 2024 Braudana. All rights reserved.
         </div>
       </footer>
     </>

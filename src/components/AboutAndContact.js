@@ -10,7 +10,7 @@ const AboutAndContact = () => (
     <ThemeToggle />
     <main className="container mx-auto py-8">
       <h2 className="text-2xl font-bold mb-4">About Us</h2>
-      <p>Welcome to our Data Dashboard. Our mission is to provide insightful data visualizations to help you make informed decisions.</p>
+      <p>Welcome to Braudana. It's like Grafana, but better. Our mission is to provide insightful data visualizations to help you make informed decisions.</p>
       <h3 className="text-xl font-bold mt-8 mb-2">Team Details</h3>
       <table className="min-w-full divide-y divide-gray-200 transparent-table">
         <thead className="dark-table-header">
@@ -48,7 +48,7 @@ const AboutAndContact = () => (
     </main>
     <footer className="bg-gray-800 p-4 text-white mt-8">
       <div className="container mx-auto text-center">
-        &copy; 2024 Data Dashboard. All rights reserved.
+        &copy; 2024 Braudana. All rights reserved.
       </div>
     </footer>
   </>
