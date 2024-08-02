@@ -142,7 +142,7 @@ const Home = () => {
           </div>
         ) : !chartType ? (
           <div className="text-center">
-            <label className="block text-lg font-medium mb-4">Select Visualization Type:</label>
+            <label className="block text-lg font-medium mb-4">Select Visualization:</label>
             <div className="flex justify-around">
               <button onClick={() => setChartType('bar')} className="focus:outline-none">
                 <img src='pictures/BarChart.png' alt="Bar Chart Preview" className="w-48 h-48 object-contain border-4 border-gray-300 rounded-lg" />
