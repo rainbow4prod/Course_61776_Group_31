@@ -5,10 +5,9 @@ import ThemeToggle from './ThemeToggle';
 import '../App.css'; // Ensure this import is present
 
 const AboutAndContact = () => (
-  <>
+  <div className="flex flex-col min-h-screen">
     <NavBar />
-    <ThemeToggle />
-    <main className="container mx-auto py-8">
+    <main className="flex-grow container mx-auto py-8">
       <h2 className="text-2xl font-bold mb-4">About Us</h2>
       <p>Welcome to Braudana. It's like Grafana, but better. Our mission is to provide insightful data visualizations to help you make informed decisions.</p>
       <h3 className="text-xl font-bold mt-8 mb-2">Team Details</h3>
@@ -51,7 +50,7 @@ const AboutAndContact = () => (
         &copy; 2024 Braudana. All rights reserved.
       </div>
     </footer>
-  </>
+  </div>
 );
 
 export default AboutAndContact;

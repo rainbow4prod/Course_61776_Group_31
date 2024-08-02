@@ -1,6 +1,7 @@
 // src/components/NavBar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => (
   <nav className="bg-gray-800 p-4 text-white">
@@ -14,6 +15,7 @@ const NavBar = () => (
     </div>
       <div className="container mx-auto flex justify-between items-center">
           <h5 className="text-1xl">like Grafana, but better</h5>
+          <ThemeToggle />
           </div>
   </nav>
 );

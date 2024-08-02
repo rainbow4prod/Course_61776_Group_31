@@ -46,10 +46,9 @@ const FAQ = () => {
   ];
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <NavBar />
-      <ThemeToggle />
-      <main className="container mx-auto py-8">
+      <main className="flex-grow container mx-auto py-8">
         <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
         <div className="faq-section">
           {faqItems.map((item, index) => (
@@ -72,7 +71,7 @@ const FAQ = () => {
           &copy; 2024 Braudana. All rights reserved.
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 
