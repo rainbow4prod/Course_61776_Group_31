@@ -145,13 +145,13 @@ const Home = () => {
             <label className="block text-lg font-medium mb-4">Select Visualization Type:</label>
             <div className="flex justify-around">
               <button onClick={() => setChartType('bar')} className="focus:outline-none">
-                <img src='/pictures/BarChart.png' alt="Bar Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='pictures/BarChart.png' alt="Bar Chart Preview" className="w-32 h-32 object-contain" />
               </button>
               <button onClick={() => setChartType('line')} className="focus:outline-none">
-                <img src='/pictures/GraphChart.png' alt="Line Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='pictures/GraphChart.png' alt="Line Chart Preview" className="w-32 h-32 object-contain" />
               </button>
               <button onClick={() => setChartType('pie')} className="focus:outline-none">
-                <img src='/pictures/PieChart.png' alt="Pie Chart Preview" className="w-32 h-32 object-contain" />
+                <img src='pictures/PieChart.png' alt="Pie Chart Preview" className="w-32 h-32 object-contain" />
               </button>
             </div>
           </div>
