@@ -63,10 +63,11 @@
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\src\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\braudana\public" />
+      <recent name="C:\Users\Admin\PycharmProjects\braudana\public\pictures" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\public" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\src" />
       <recent name="C:\Users\Admin\PycharmProjects\untitled1\src\components" />
-      <recent name="C:\Users\Admin\PycharmProjects\untitled1\src\pictures" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -264,7 +265,7 @@
       <workItem from="1722187654147" duration="2930000" />
       <workItem from="1722587831246" duration="291000" />
       <workItem from="1722588132219" duration="696000" />
-      <workItem from="1722592649453" duration="5028000" />
+      <workItem from="1722592649453" duration="5324000" />
     </task>
     <task id="LOCAL-00001" summary="React initial structure">
       <created>1721585053379</created>
@@ -378,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722603387364</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Label changes">
+      <created>1722604595800</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722604595800</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
