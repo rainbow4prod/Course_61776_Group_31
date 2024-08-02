@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from './NavBar';
-import ThemeToggle from './ThemeToggle';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
@@ -36,6 +35,14 @@ const Home = () => {
     }
   };
 
+  const handleBack = () => {
+    setChartType('');
+    setFields({ xField: '', yField: '' });
+    if (chartInstance.current) {
+      chartInstance.current.destroy();
+    }
+  };
+
   useEffect(() => {
     if (data && fields.xField && fields.yField && chartType && fields.xField !== fields.yField) {
       const chartCanvas = chartRef.current.getContext('2d');
@@ -48,8 +55,8 @@ const Home = () => {
           labels: data.map(item => item[fields.xField]),
           datasets: [{
             label: 'Data',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: chartType === 'pie' ? ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)'] : 'rgba(255, 99, 132, 0.2)',
+            borderColor: chartType === 'pie' ? ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'] : 'rgba(255, 99, 132, 1)',
             borderWidth: 1,
             data: data.map(item => item[fields.yField])
           }]
@@ -57,11 +64,17 @@ const Home = () => {
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          scales: {
+          plugins: {
+            legend: {
+              display: chartType === 'pie',
+              position: 'bottom',
+            }
+          },
+          scales: chartType !== 'pie' ? {
             y: {
               beginAtZero: true
             }
-          }
+          } : {}
         }
       });
     }
@@ -130,6 +143,9 @@ const Home = () => {
             </div>
             <div id="chart-container" className="relative" style={{ height: '400px' }}>
               <canvas ref={chartRef} id="chart"/>
+            </div>
+            <div className="flex justify-center mt-4">
+              <button onClick={handleBack} className="bg-gray-800 text-white py-2 px-4 rounded">Back</button>
             </div>
           </>
         )}

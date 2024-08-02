@@ -1,7 +1,6 @@
 // src/components/FAQ.js
 import React, { useState } from 'react';
 import NavBar from './NavBar';
-import ThemeToggle from './ThemeToggle';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);

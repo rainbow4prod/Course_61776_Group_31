@@ -1,7 +1,6 @@
 // src/components/AboutAndContact.js
 import React from 'react';
 import NavBar from './NavBar';
-import ThemeToggle from './ThemeToggle';
 import '../App.css'; // Ensure this import is present
 
 const AboutAndContact = () => (
