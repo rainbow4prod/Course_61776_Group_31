@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => (
-  <nav className="bg-gray-800 p-4 text-white">
+  <nav className="bg-gray-700 p-4 text-white">
     <div className="container mx-auto flex justify-between items-center">
       <h1 className="text-4xl font-bold">Braudana</h1>
       <ul className="flex space-x-4">
@@ -14,7 +14,7 @@ const NavBar = () => (
       </ul>
     </div>
       <div className="container mx-auto flex justify-between items-center">
-          <h5 className="text-1xl">like Grafana, but better</h5>
+          <h5 className="text-1xl">like Grafana ... but better</h5>
           <ThemeToggle />
           </div>
   </nav>

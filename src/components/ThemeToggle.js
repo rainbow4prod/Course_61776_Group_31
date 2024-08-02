@@ -1,24 +1,23 @@
-// src/components/ThemeToggle.js
 import React, { useState, useEffect } from 'react';
-import '../App.css'; // Ensure this import is present
+import '../App.css';
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme === 'dark';
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
   });
 
   const toggleTheme = () => {
-    const nextTheme = darkMode ? 'light' : 'dark';
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark', !darkMode);
-    document.body.classList.toggle('light', darkMode);
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    document.body.classList.toggle('dark', nextTheme === 'dark');
+    document.body.classList.toggle('light', nextTheme === 'light');
     localStorage.setItem('theme', nextTheme);
+    window.dispatchEvent(new Event('themechange')); // Dispatch custom event
   };
 
   useEffect(() => {
-    document.body.classList.add(darkMode ? 'dark' : 'light');
-  }, [darkMode]);
+    document.body.classList.add(theme);
+  }, [theme]);
 
   return (
     <div className="bg-gray text-white py-2">
@@ -28,7 +27,7 @@ const ThemeToggle = () => {
           className="theme-toggle-btn p-2 rounded-full"
         >
           <img
-            src={darkMode ? 'pictures/sun.png' : 'pictures/moon.png'}
+            src={theme === 'dark' ? 'pictures/sun.png' : 'pictures/moon.png'}
             alt="Toggle Theme"
             width="24"
             height="24"
