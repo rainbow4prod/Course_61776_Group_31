@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/braudana/">
+    <Router basename="">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-contact" element={<AboutAndContact />} />

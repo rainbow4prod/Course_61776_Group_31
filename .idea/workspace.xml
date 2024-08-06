@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19748fec-02da-42b1-8e48-95a932815f41" name="Changes" comment="Fix for vercel">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.npm start.executor": "Run",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -289,7 +291,7 @@
       <workItem from="1722588132219" duration="696000" />
       <workItem from="1722592649453" duration="18839000" />
       <workItem from="1722669854251" duration="13000" />
-      <workItem from="1722950578866" duration="544000" />
+      <workItem from="1722950578866" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="React initial structure">
       <created>1721585053379</created>
@@ -580,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722950857052</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Fix for vercel">
+      <option name="closed" value="true" />
+      <created>1722951131669</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722951131669</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
